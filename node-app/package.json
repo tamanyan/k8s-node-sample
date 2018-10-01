@@ -1,0 +1,14 @@
+{
+  "name": "sample-node-app",
+  "version": "1.0.0",
+  "description": "Sample Node.js App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Taketo Yoshida",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

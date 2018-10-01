@@ -1,0 +1,19 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: sample-node-app
+  labels:
+    app: sample-node-app
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: sample-node-app
+    spec:
+      containers:
+      - name: sample-node-app
+        image: gcr.io/myproject/node-app:v1
+        command:
+        ports:
+          - containerPort: 3000
